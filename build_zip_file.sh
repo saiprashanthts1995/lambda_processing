@@ -12,11 +12,11 @@ pip install -r requirements.txt -t build
 
 ## adding the zip file
 cd build
-zip -rq ../retrive_s3_details.zip .
+zip -r ../retrive_s3_details.zip .
 
 ## adding lambda function
 cd ../retrive_s3_details
-zip -rq ../retrive_s3_details.zip lambda_function.py
+zip -r ../retrive_s3_details.zip lambda_function.py
 
 ## checking the contents of zip file
 unzip -t retrive_s3_details.zip
