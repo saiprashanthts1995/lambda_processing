@@ -1,6 +1,9 @@
 #declare -a package_name=("retrive_s3_details" "abc")
 echo 123
 
+ls
+pwd
+
 echo "removing the build folder"
 rm -rf build
 

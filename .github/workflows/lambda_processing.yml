@@ -49,3 +49,10 @@ jobs:
     - name: Push Zip file to S3
       run: |
         aws s3 cp retrive_s3_details.zip s3://lambda-processing-sai/buld_code/
+
+    - name: Deploy to AWS Lambda by updating the zip file present in S3 bucket
+      run: |
+        aws lambda update-function-code \
+              --function-name  retrive_s3_details \
+              --s3-bucket lambda-processing-sai \
+              --s3-key buld_code/retrive_s3_details.zip
