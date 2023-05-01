@@ -15,8 +15,8 @@ cd build
 zip -r ../retrive_s3_details.zip .
 
 ## adding lambda function
-cd ../retrive_s3_details
-zip -r ../retrive_s3_details.zip lambda_function.py
+cd ..
+zip -r retrive_s3_details.zip retrive_s3_details
 
 ## checking the contents of zip file
 unzip -t retrive_s3_details.zip
