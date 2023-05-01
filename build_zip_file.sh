@@ -1,4 +1,4 @@
-declare -a package_name=("retrive_s3_details" "abc")
+#declare -a package_name=("retrive_s3_details" "abc")
 echo 123
 
 echo "removing the build folder"
